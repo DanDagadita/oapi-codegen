@@ -1073,7 +1073,7 @@ func GenerateClientWithResponses(t *template.Template, ops []OperationDefinition
 }
 
 // GenerateTemplates used to generate templates
-func GenerateTemplates(templates []string, t *template.Template, ops interface{}) (string, error) {
+func GenerateTemplates(templates []string, t *template.Template, ops any) (string, error) {
 	var generatedTemplates []string
 	for _, tmpl := range templates {
 		var buf bytes.Buffer
